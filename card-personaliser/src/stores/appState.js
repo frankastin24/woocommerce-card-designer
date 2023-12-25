@@ -1,0 +1,32 @@
+import { defineStore } from "pinia";
+
+export const useAppState = defineStore("appState", {
+  state: () => ({
+    activeView: 0,
+    cardSizeRatio: 1,
+    canvasContexts: {},
+    canvas: {},
+    cardScale: 1,
+    isImageOptions: false,
+    isImageAjustments: false,
+    isImageLibrary: false,
+    isTextOptions: false,
+    isTextSizeOptions: false,
+    isTextColorOptions: false,
+    isTextAlignOptions: false,
+    isTextFontOptions: false,
+    uploadedImages: [],
+    activeUploadedImage: null,
+    isMouseDown: false,
+    dashesElements: [],
+    isEditing: false,
+    viewWidth: "",
+    viewHeight: "",
+    viewContainerLeft: "0px",
+    layerOptionsLeft: "0px",
+    isViewChanging: false,
+    isFirstRender: true,
+    lastCoords: [0, 0],
+    previewURLs: "",
+  }),
+});
